@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<style type="text/css">
+    h1 {
+        display: block;
+        text-align: center;
+    }
+    
+    .wrapper {
+        padding-left: 200px;
+    }
+    
+    .boxes {
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+        background-color: lightblue;
+        {% if color == color: %}background-color:{{color}}{% endif %};
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <h1>Welcome!</h1>
+    <div class="wrapper">
+        <div class = "boxes"></div>
+        <div class = "boxes"></div>
+        <div class = "boxes"></div>
+    {% if level == 2 or level == 3: %}
+        {% for i in range(0, repeat): %}
+            <div class = "boxes"></div>
+        {% endfor %}
+    {% endif %}
+    </div>
+</body>
+</html>
